@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do Lists - One</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Todo</h2>
+
+      <form id="form">
+        <input type="text" id="list" class="form-control" />
+        <button type="submit" class="btn plus-btn">+</button>
+      </form>
+
+      <div class="filter">
+        <button type="button" id="all" class="action-btn">All</button>
+        <button type="button" id="notdone" class="action-btn">Active</button>
+        <button type="button" id="done" class="action-btn">Completed</button>
+      </div>
+
+      <ul class="list-group" id="list-group"></ul>
+      <p><span id="zero">0</span> items left</p>
+      <div class="filter-two">
+        <button type="button" id="checkAll" class="action-btn">
+          Check All
+        </button>
+        <button type="button" id="cleardone" class="action-btn">
+          Clear Completed
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
